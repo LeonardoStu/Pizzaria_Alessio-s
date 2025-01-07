@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --color-background: #232323;
+    --color-background-div-pizza: #eaeaea;
+    --color-white: #fff;
+    --color-hover-white: #e2e2e2;
+    --color-hover-button: #cf8700;
+    --color-hover-div-pizza: #c4c4c4;
+    --color-button: #fea400; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--color-background);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: var(--color-white);
+    margin-right: 1.5rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0, 0, 0, .1));
+
+}
+
+.hero__div {
+    text-align: center;
+    padding-top: 13rem;
+}
+
+.hero__title {
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.hero__text {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 1rem 0;
+    letter-spacing: .10rem;
+}
+
+.section__link {
+    background-color: var(--color-button);
+    color: var(--color-background);
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-top: 1rem;
+    transition: 0.4s;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    z-index: -10;
+}
+
+.section {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section__title {
+    font-size: 3rem;
+    margin: 4rem 0;
+}
+
+.section__text {
+    letter-spacing: .10rem;
+}
+
+.section__pizza-div {
+    display: inline-block;
+    background-color: var(--color-background-div-pizza);
+    border-radius: 1rem;
+    width: 25%;
+    height: 28rem;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.section__img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.section__title-pizza {
+    text-align: start;
+    font-size: 1.10rem;
+    padding: 1rem 1.25rem 0;
+    margin: 0 auto;
+}
+
+.section__text-pizza {
+    text-align: start;
+    font-size: 1.05rem;
+    padding: 1rem 1.25rem 0;
+    margin: 0 auto;
+    overflow: auto;
+    max-height: 100px;
+}
+
+.section__about-ous {
+    position: relative;
+    min-height: 30vh;
+    background: linear-gradient(rgba(0,0,0,.1), #000);
+}
+
+.section__img-about-ous {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -10;
+}
+
+.section__about-ous {
+    margin-top: 3rem;
+}
+
+.section__about-ous > div{
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.section__contact {
+    text-align: center;
+}
+
+.section__contact-div {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__address {
+    width: 100%;
+    text-align: center;
+}
+
+.section__address-div {
+    display: inline-block;
+    width: 25%;
+    text-align: start;
+}
+
+.section__about-ous-link {
+    color: var(--color-button);
+}
+
+.section__address-div:nth-child(2){
+    text-align: center;
+}
+
+section > .section__link {
+    display: inline-block;
+    margin: 3rem 0;
+}
+
+
+footer {
+    background-color: var(--color-background);
+    color: var(--color-button);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer > p > a {
+    color: var(--color-button);
+} 
+
+.navigation__link:hover {
+    color: var(--color-hover-white);
+}
+
+.section__link:hover {
+    background-color: var(--color-hover-button);
+}
+
+.section__pizza-div:hover {
+    background-color: var(--color-hover-div-pizza);
+}
